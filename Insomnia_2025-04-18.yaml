@@ -1,0 +1,334 @@
+type: collection.insomnia.rest/5.0
+name: Loja
+meta:
+  id: wrk_941ce26b44104af6836040c564ccc7b3
+  created: 1744670252204
+  modified: 1744670252204
+collection:
+  - name: Usuarios
+    meta:
+      id: fld_79b7ec7395ec44779afb8a7324314e49
+      created: 1744940910793
+      modified: 1744944612148
+      sortKey: -1744940941451.1328
+    children:
+      - url: http://localhost:3000/usuarios
+        name: Usuarios
+        meta:
+          id: req_205fe4a2289043ca8a3bc3f616f28537
+          created: 1744670273750
+          modified: 1744945404800
+          isPrivate: false
+          sortKey: -1744940919909
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+            		"nome": "cabeçaDeGelo",
+            		"email": "fogoNaBabilonia@gmail.com",
+            		"senha": "74r3264972"
+            }
+        parameters:
+          - id: pair_77e0784710964cdb82b1c31193518833
+            disabled: false
+          - id: pair_c8f10a9d47f74e70975b81b97a9f5f9f
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/usuarios
+        name: Usuarios
+        meta:
+          id: req_64cac28b09fa4e329feec386199f1246
+          created: 1744908959140
+          modified: 1744941308893
+          isPrivate: false
+          sortKey: -1744940919809
+        method: GET
+        parameters:
+          - id: pair_0dec877474d6469c8c04c4181f03a845
+            disabled: false
+          - id: pair_d9860f49f94247cdb4f3a3619550eaf5
+            disabled: false
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        authentication:
+          type: bearer
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/usuarios/5a058e6f-47e6-48e8-b992-c4c0c5fcb47f
+        name: Usuarios
+        meta:
+          id: req_87ca7d8941dd4ebea09bdcbfbedc4687
+          created: 1744940336810
+          modified: 1744943883472
+          isPrivate: false
+          sortKey: -1744940919709
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+            		"nome": "Alex Felipe"
+            }
+        parameters:
+          - id: pair_3d77b3d7d8ed490aab12c8bedd2f8483
+            disabled: false
+          - id: pair_e1ae9f6488f44226825cd246edaee42b
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_c2c97222c04943b4b47e3a28bf995237
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_cc73e512e3764f87b64b95a80e2e9550
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/usuarios/03cfa23d-4f89-4f3a-8b99-eb983812a0c4
+        name: Usuarios
+        meta:
+          id: req_908fa7f3d503487fb51eafdeaa2fee6c
+          created: 1744944622826
+          modified: 1744945421274
+          isPrivate: false
+          sortKey: -1736824131411.5
+        method: DELETE
+        body:
+          mimeType: application/json
+        parameters:
+          - id: pair_3d77b3d7d8ed490aab12c8bedd2f8483
+            disabled: false
+          - id: pair_e1ae9f6488f44226825cd246edaee42b
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_c2c97222c04943b4b47e3a28bf995237
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_cc73e512e3764f87b64b95a80e2e9550
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Produtos
+    meta:
+      id: fld_d316a16c033d4b35a93b05e0d0f48a7b
+      created: 1744940945824
+      modified: 1744940981409
+      sortKey: -1744940941351.1328
+    children:
+      - url: "  http://localhost:3000/produtos"
+        name: Produtos
+        meta:
+          id: req_8a1e3ed3e90e4be1bdd64d895df0c578
+          created: 1744911115321
+          modified: 1744998705857
+          isPrivate: false
+          sortKey: -1744940985251
+        method: POST
+        body:
+          mimeType: application/json
+          text: >-
+            {
+              "nome": "Figura de ação Marvel Hulk Gigante Olympus E7825 de Hasbro Premium",
+              "descricao": "Produto exclusivo, acabamento premium, peça de colecionador com articulações avançadas e detalhes impressionantes",
+              "usuarioId": "ef5e0d91-77fd-4ac9-a7b7-074e4dc08395",
+              "imagens": [
+                {
+                  "url": "https://exemplo.com/imagens/hulk-premium.jpg",
+                  "descricao": "Imagem principal do Hulk Gigante"
+                },
+                {
+                  "url": "https://exemplo.com/imagens/hulk-caixa.jpg",
+                  "descricao": "Embalagem exclusiva"
+                }
+              ],
+              "valor": 120.0,
+              "quantidade": 5,
+              "caracteristicas": [
+                {
+                  "nome": "fabricante",
+                  "descricao": "Iron Studios"
+                },
+                {
+                  "nome": "material",
+                  "descricao": "plástico de alta resistência"
+                },
+                {
+                  "nome": "caixa",
+                  "descricao": "original Marvel edição limitada"
+                },
+                {
+                  "nome": "altura",
+                  "descricao": "25 cm"
+                },
+                {
+                  "nome": "articulações",
+                  "descricao": "30 pontos de articulação"
+                }
+              ],
+              "categoria": "Colecionáveis"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/produtos/
+        name: Produtos
+        meta:
+          id: req_7b440bdc3d854e43b13089508fbcb89c
+          created: 1744911120690
+          modified: 1744996711873
+          isPrivate: false
+          sortKey: -1744940985151
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/produtos/b4ca9dc1-f6c0-4450-b2b2-4520d12ffda2
+        name: Produtos
+        meta:
+          id: req_e01108fececb4c19a147aab8f4dc7703
+          created: 1744996656908
+          modified: 1744998752623
+          isPrivate: false
+          sortKey: -1744940952530
+        method: PUT
+        body:
+          mimeType: application/json
+          text: >-
+            [
+            	{
+            		"id": "9b9778b0-8a52-44d9-8152-42b3e2b585e5",
+            		"usuarioId": "ef5e0d91-77fd-4ac9-a7b7-074e4dc08395",
+            		"nome": "Figura de ação Marvel Homem Aranha Olympus Homem Aranha E6358 de Hasbro Classic",
+            		"valor": 70,
+            		"quantidade": 10,
+            		"descricao": "Produto novo, bem acabado, alegria para colecionadores",
+            		"caracteristicas": [
+            			{
+            				"nome": "fabricante",
+            				"descricao": "iron Studios"
+            			},
+            			{
+            				"nome": "material",
+            				"descricao": "plástico"
+            			},
+            			{
+            				"nome": "pacote",
+            				"descricao": "original Marvel"
+            			}
+            		],
+            		"imagens": [
+            			{
+            				"url": "https://i.imgur.com/dwDZICq.jpg",
+            				"descricao": "Imagem do Homem Aranha"
+            			}
+            		],
+            		"categoria": "Colecionáveis"
+            	}
+            ]
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.0.2
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/produtos/51379208-a3d8-41ac-bc82-6315b3aedabc
+        name: Produtos
+        meta:
+          id: req_e8f3cfc81d7f42209e947147b65fccd1
+          created: 1744997245731
+          modified: 1744997313125
+          isPrivate: false
+          sortKey: -1744940952430
+        method: DELETE
+        body:
+          mimeType: application/json
+        parameters:
+          - id: pair_3d77b3d7d8ed490aab12c8bedd2f8483
+            disabled: false
+          - id: pair_e1ae9f6488f44226825cd246edaee42b
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: application/json
+            id: pair_c2c97222c04943b4b47e3a28bf995237
+          - name: User-Agent
+            value: insomnia/11.0.2
+            id: pair_cc73e512e3764f87b64b95a80e2e9550
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_57401528db5f422ecfb18838e9f8b23d3f35cd74
+    created: 1744670252213
+    modified: 1744670252213
+environments:
+  name: Base Environment
+  meta:
+    id: env_57401528db5f422ecfb18838e9f8b23d3f35cd74
+    created: 1744670252210
+    modified: 1744941370014
+    isPrivate: false
